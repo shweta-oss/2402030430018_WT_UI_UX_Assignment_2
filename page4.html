@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Info Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    .info-section {
+      padding: 60px 80px;
+      position: relative;
+    }
+
+    .info-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 60px;
+    }
+
+    .info-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 400px;
+    }
+
+    .info-form button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .art-btn {
+      position: absolute;
+      top: 40px;
+      right: 80px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .info-section {
+        padding: 40px 30px;
+      }
+
+      .info-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+      }
+
+      .art-btn {
+        top: 20px;
+        right: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="info-section">
+    <button class="art-btn">ART</button>
+    <h1 class="info-title">INFO</h1>
+
+    <div class="info-form">
+      <button>Login here</button>
+      <button>NAME</button>
+      <button>CONTACT</button>
+      <button>EMAIL</button>
+    </div>
+  </div>
+
+</body>
+</html>

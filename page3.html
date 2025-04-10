@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Most Recent Auctions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    .recent-auctions {
+      padding: 60px 80px;
+    }
+
+    .recent-auctions-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .recent-auctions-header h2 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .category-btn {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 8px 18px;
+      font-size: 0.95rem;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .arrow-btn {
+      background-color: black;
+      color: white;
+      border: none;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .auction-items {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .auction-card {
+      text-align: center;
+      max-width: 280px;
+    }
+
+    .auction-card img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .auction-card button {
+      margin-top: 15px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .recent-auctions-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .auction-items {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="recent-auctions">
+    <div class="recent-auctions-header">
+      <h2>Most Recent Auctions</h2>
+      <div class="header-controls">
+        <button class="category-btn">ART</button>
+        <button class="arrow-btn">&#9664;</button>
+        <button class="arrow-btn">&#9654;</button>
+      </div>
+    </div>
+
+    <div class="auction-items">
+      <div class="auction-card">
+        <img src="images/girl.png" alt="Girl">
+        <button>VIEW RESULT</button>
+      </div>
+      <div class="auction-card">
+        <img src="images/color.png" alt="Color">
+        <button>VIEW RESULT</button>
+      </div>
+      <div class="auction-card">
+        <img src="images/emoji.png" alt="Emoji">
+        <button>VIEW RESULT</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

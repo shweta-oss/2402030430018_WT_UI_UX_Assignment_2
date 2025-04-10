@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hidden Gems</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: white;
+    }
+
+    .hidden-section {
+      padding: 60px 80px;
+      text-align: center;
+      position: relative;
+    }
+
+    .art-btn {
+      position: absolute;
+      top: 40px;
+      right: 80px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .hidden-title {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 60px;
+    }
+
+    .image-grid {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .image-grid img {
+      width: 250px;
+      height: 250px;
+      border-radius: 30px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .hidden-section {
+        padding: 40px 20px;
+      }
+
+      .art-btn {
+        top: 20px;
+        right: 20px;
+      }
+
+      .hidden-title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+      }
+
+      .image-grid {
+        gap: 30px;
+      }
+
+      .image-grid img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hidden-section">
+    <button class="art-btn">ART</button>
+    <h1 class="hidden-title">Hidden Gems</h1>
+
+    <div class="image-grid">
+      <img src="images/horse.png" alt="Horse Image">
+      <img src="images/cow.png" alt="Cow Image">
+      <img src="images/wierd.png" alt="Weird Image">
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Curated Series</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: white;
+    }
+
+    .container {
+      padding: 60px 80px;
+      position: relative;
+    }
+
+    .tag-art {
+      position: absolute;
+      top: 40px;
+      right: 80px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-weight: bold;
+      border-radius: 25px;
+    }
+
+    .title {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .btn-blackwhite {
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      padding: 12px 32px;
+      border-radius: 25px;
+      border: none;
+      font-size: 1rem;
+      margin-bottom: 60px;
+      cursor: default;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .label {
+      margin-top: 16px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 20px;
+      }
+
+      .tag-art {
+        top: 20px;
+        right: 20px;
+      }
+
+      .title {
+        font-size: 2.2rem;
+      }
+
+      .gallery {
+        gap: 30px;
+      }
+
+      .gallery-item img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <button class="tag-art">ART</button>
+    <h1 class="title">Curated Series</h1>
+    <button class="btn-blackwhite">BLACK AND WHITE</button>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/women.png" alt="ZEN">
+        <div class="label">ZEN</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/face.png" alt="LILY">
+        <div class="label">LILY</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/ball.png" alt="DUNDUN">
+        <div class="label">DUNDUN</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

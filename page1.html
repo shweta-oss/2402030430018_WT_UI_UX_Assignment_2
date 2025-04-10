@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Virtuart - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #000;
+      background-color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: 'Georgia', serif;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .login-btn {
+      background: black;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .search-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 5%;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .search-section input {
+      padding: 8px 14px;
+      width: 250px;
+      max-width: 100%;
+      border: 2px solid black;
+      border-radius: 20px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .search-section h1 {
+      font-size: 36px;
+      font-weight: bold;
+      font-family: 'Impact', sans-serif;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .hero {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption-box {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(30, 30, 30, 0.9);
+      color: white;
+      padding: 30px;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+
+    .caption-box .category {
+      font-size: 12px;
+      color: #ccc;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .caption-box h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .caption-box .date {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #ddd;
+    }
+
+    .catalogue-btn {
+      background-color: #c89d3f;
+      border: none;
+      padding: 10px 16px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0;
+      }
+
+      .search-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 5%;
+      }
+
+      .search-section h1 {
+        font-size: 28px;
+      }
+
+      .caption-box {
+        position: static;
+        transform: none;
+        background-color: #333;
+        margin-top: 15px;
+        padding: 20px;
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+      }
+
+      .caption-box h2 {
+        font-size: 20px;
+      }
+
+      .catalogue-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .search-section input {
+        width: 100%;
+      }
+
+      .login-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">VIRTUART</div>
+    <nav class="nav-links">
+      <a href="#">Auctions+</a>
+      <a href="#">BUY</a>
+      <a href="#">SELL</a>
+      <a href="#">DEPARTMENTS</a>
+      <a href="#">SERVICES+</a>
+      <a href="#">REACH US</a>
+    </nav>
+    <button class="login-btn">Login/Register</button>
+  </header>
+
+  <!-- SEARCH AND TITLE -->
+  <section class="search-section">
+    <input type="text" placeholder="Search" />
+    <h1>Auctions On The Way</h1>
+  </section>
+
+  <!-- HERO IMAGE SECTION -->
+  <section class="hero">
+    <img src="images/chandelier.png" alt="Imperial Treasures" class="hero-image" />
+    <div class="caption-box">
+      <p class="category">ANTIQUES & SILVER</p>
+      <h2>Imperial Treasures</h2>
+      <p class="date">Feb 25 - 27, 2025</p>
+      <button class="catalogue-btn">VIEW CATALOGUE</button>
+    </div>
+  </section>
+
+</body>
+</html>
