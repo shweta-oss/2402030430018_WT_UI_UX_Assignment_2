@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtuart</title>
+  <style>
+     html {
+      scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      background: #fff;
+    }
+
+    /* Header & Nav */
+    
+    header {
+        
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+    }
+    .login-btn {
+      background: black;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Search & Hero */
+    .search-container {
+      display: flex;
+      justify-content: flex-start;
+      padding: 10px 50px;
+    }
+    .search-container input {
+      padding: 10px 15px;
+      width: 250px;
+      border: 2px solid black;
+      border-radius: 20px;
+    }
+    .hero-heading {
+      text-align: center;
+      font-size: 48px;
+      margin: 20px 0;
+      font-weight: 700;
+    }
+    .hero-banner {
+      position: relative;
+      max-width: 90%;
+      margin: 0 auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .hero-banner img {
+      width: 100%;
+      display: block;
+    }
+    .banner-caption {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 20px 25px;
+      max-width: 300px;
+      border-radius: 4px;
+    }
+    .banner-caption h4 {
+      margin: 0;
+      font-size: 14px;
+      color: #aaa;
+      text-transform: uppercase;
+    }
+    .banner-caption h2 {
+      margin: 10px 0 5px;
+      font-size: 24px;
+    }
+    .banner-caption p {
+      font-size: 14px;
+      color: #ccc;
+    }
+    .banner-caption button {
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #c79d49;
+      border: none;
+      color: white;
+      border-radius: 3px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Your existing site styles (footer, sections, etc.) go here */
+    section {
+      padding: 60px 40px;
+    }
+    .footer {
+      background-color: #fff;
+    }
+    .footer-columns {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+    .footer-column h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .footer-column p {
+      margin: 6px 0;
+    }
+    .signup-section {
+      margin-bottom: 40px;
+    }
+    .signup-section p:first-child {
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+    .signup-section input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+    .email-box {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      max-width: 280px;
+      border-bottom: 1px solid black;
+      padding-bottom: 4px;
+    }
+    .email-box img {
+      width: 20px;
+      margin-left: 8px;
+    }
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      margin: 40px 0;
+    }
+    .social-icons img {
+      width: 30px;
+    }
+    .footer-info {
+      font-size: 12px;
+      color: gray;
+    }
+    @media screen and (max-width: 768px) {
+      .footer-columns {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="#section1" style="text-decoration: none; color: black;">VIRTUART</a></div>
+    <nav>
+      <ul>
+        <li><a href="#section2">Auctions+</a></li>
+        <li><a href="#section7">BUY</a></li>
+        <li><a href="#section5">SELL</a></li>
+        <li><a href="#section3">DEPARTMENTS</a></li>
+        <li><a href="#section6">SERVICES+</a></li>
+        <li><a href="#section8">REACH US</a></li>
+      </ul>
+    </nav>
+    <a href="#section4"><button class="login-btn">Login/Register</button></a>
+  </header>
+
+  <!-- Search -->
+  <div class="search-container">
+    <input type="text" placeholder="Search">
+  </div>
+
+  <!-- Hero -->
+  <h1 class="hero-heading">Auctions On The Way</h1>
+  <div class="hero-banner">
+    <img src="images/chandelier.png" alt="Chandelier" />
+    <div class="banner-caption">
+      <h4>Antiques & Silver</h4>
+      <h2>Imperial Treasures</h2>
+      <p>Feb 25 - 27, 2025</p>
+      <button>View Catalogue</button>
+    </div>
+  </div>
+
+  <!-- Continue with your original sections: More Auctions, Recent Auctions, Info, Hidden Gems, Curated Series, Footer, etc. -->
+
+</body>
+</html>
+
+
+  <!-- Section 1: Nav -->
+  <section id="section1" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 40px;">
+    <div style="font-size: 32px; font-weight: bold;">VIRTUART</div>
+    <a href="#section1" style="text-decoration: none;">
+        <button style="background: black; color: white; padding: 12px 28px; border: none; border-radius: 24px; font-weight: bold; font-size: 14px;">ART</button>
+      </a>
+      
+  </section>
+  
+
+  <!-- Section 2: More Auctions -->
+  <section id="section2" style="background: #f5f5f5;">
+    <h2 style="font-size: 32px; text-align: center;">More Auctions Coming Soon</h2>
+    <p style="max-width: 800px; margin: 20px auto; text-align: center; line-height: 1.6;">
+      Over the years, we have curated a wide range of online auctions in India, covering a diverse array of categories. Our portfolio boasts an impressive collection of Modern Indian Art from famous painters, exquisite vintage jewellery, fine silverware, rare timepieces, luxurious textiles, coveted celebrity memorabilia, rare books, numismatic treasures, philatelic gems, and even vintage cars. Take a look at the offerings in our upcoming online auctions.
+    </p>
+    <div style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
+      <div style="background: black; color: white; padding: 20px; border-radius: 12px; width: 200px; text-align: center;">
+        <a href="#section1" style="text-decoration: none;">
+            <button style="background: black; color: white; padding: 12px 28px; border: none; border-radius: 24px; font-weight: bold; font-size: 14px;">ART</button>
+          </a>
+        <img src="images/modern.png" alt="Modern Masters" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+        <h4>Modern</h4>
+        <p>April 10 - 12, 2025</p>
+      </div>
+      <div style="background: black; color: white; padding: 20px; border-radius: 12px; width: 200px; text-align: center;">
+        <img src="images/lion.png" alt="Lion" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+        <h4>Lion</h4>
+        <p>April 20, 2025<br>Time To Be Announced</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Recent Auctions -->
+  <section id="section3">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 40px;">
+      <h2 style="font-size: 2.8rem; font-weight: bold;">Most Recent Auctions</h2>
+      <div style="display: flex; gap: 10px;">
+        <a href="#section1">
+            <button style="background: black; color: white; border: none; padding: 8px 18px; border-radius: 25px; cursor: pointer;">ART</button>
+          </a>
+       
+        <button style="background: black; color: white; border: none; width: 35px; height: 35px; border-radius: 50%;">&#9664;</button>
+        <button style="background: black; color: white; border: none; width: 35px; height: 35px; border-radius: 50%;">&#9654;</button>
+      </div>
+    </div>
+    <div style="display: flex; gap: 40px; flex-wrap: wrap; justify-content: center;">
+      <div style="text-align: center; max-width: 280px;">
+        <img src="images/girl.png" alt="Girl" style="width: 100%; border-radius: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+        <button style="margin-top: 15px; background: black; color: white; border: none; padding: 10px 20px; font-size: 0.9rem; border-radius: 8px; cursor: pointer;">VIEW RESULT</button>
+      </div>
+      <div style="text-align: center; max-width: 280px;">
+        <img src="images/color.png" alt="Color" style="width: 100%; border-radius: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+        <button style="margin-top: 15px; background: black; color: white; border: none; padding: 10px 20px; font-size: 0.9rem; border-radius: 8px; cursor: pointer;">VIEW RESULT</button>
+      </div>
+      <div style="text-align: center; max-width: 280px;">
+        <img src="images/emoji.png" alt="Emoji" style="width: 100%; border-radius: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+        <button style="margin-top: 15px; background: black; color: white; border: none; padding: 10px 20px; font-size: 0.9rem; border-radius: 8px; cursor: pointer;">VIEW RESULT</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Info -->
+  <section id="section4" style="position: relative;">
+    <a href="#section1" style="text-decoration: none;">
+        <button style="position: absolute; top: 0; right: 0; background-color: black; color: white; padding: 10px 25px; font-size: 0.9rem; font-weight: bold; border-radius: 25px; border: none;">ART</button>
+      </a>
+      
+    <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 60px;">INFO</h1>
+    <div style="display: flex; flex-direction: column; gap: 20px; max-width: 400px;">
+      <button style="background-color: black; color: white; border: none; padding: 15px; font-size: 1rem; font-weight: bold; border-radius: 30px; cursor: pointer;">Login here</button>
+      <button style="background-color: black; color: white; border: none; padding: 15px; font-size: 1rem; font-weight: bold; border-radius: 30px; cursor: pointer;">NAME</button>
+      <button style="background-color: black; color: white; border: none; padding: 15px; font-size: 1rem; font-weight: bold; border-radius: 30px; cursor: pointer;">CONTACT</button>
+      <button style="background-color: black; color: white; border: none; padding: 15px; font-size: 1rem; font-weight: bold; border-radius: 30px; cursor: pointer;">EMAIL</button>
+    </div>
+  </section>
+
+  <!-- Section 5: Hidden Gems -->
+  <section id="section5" style="text-align: center; position: relative;">
+    <a href="#section1" style="text-decoration: none;">
+        <button style="position: absolute; top: 20px; right: 20px; background-color: black; color: white; border: none; padding: 10px 25px; font-size: 0.9rem; font-weight: bold; border-radius: 25px; cursor: pointer;">ART</button>
+      </a>
+      
+    <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 60px;">Hidden Gems</h1>
+    <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
+      <img src="images/horse.png" alt="Horse Image" style="width: 250px; height: 250px; border-radius: 30px; object-fit: cover;">
+      <img src="images/cow.png" alt="Cow Image" style="width: 250px; height: 250px; border-radius: 30px; object-fit: cover;">
+      <img src="images/wierd.png" alt="Weird Image" style="width: 250px; height: 250px; border-radius: 30px; object-fit: cover;">
+    </div>
+  </section>
+  <!-- Section 6: Curated Series -->
+  <section id="section6" style="position: relative;">
+    <a href="#section1" style="text-decoration: none;">
+        <button style="position: absolute; top: 40px; right: 80px; background-color: black; color: white; border: none; padding: 10px 25px; font-weight: bold; border-radius: 25px;">ART</button>
+      </a>
+      
+    <h1 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px;">Curated Series</h1>
+    <button style="background-color: black; color: white; font-weight: bold; padding: 12px 32px; border-radius: 25px; border: none; font-size: 1rem; margin-bottom: 60px; cursor: default;">BLACK AND WHITE</button>
+    <div style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;">
+      <div style="text-align: center;">
+        <img src="images/women.png" alt="ZEN" style="width: 280px; height: 280px; object-fit: cover; border-radius: 20px;">
+        <div style="margin-top: 16px; font-weight: bold; font-size: 1rem;">ZEN</div>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/face.png" alt="LILY" style="width: 280px; height: 280px; object-fit: cover; border-radius: 20px;">
+        <div style="margin-top: 16px; font-weight: bold; font-size: 1rem;">LILY</div>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/ball.png" alt="DUNDUN" style="width: 280px; height: 280px; object-fit: cover; border-radius: 20px;">
+        <div style="margin-top: 16px; font-weight: bold; font-size: 1rem;">DUNDUN</div>
+      </div>
+    </div>
+  </section>
+  <!-- Section 7: Art Banner -->
+  <section id="section7" style="display: flex; justify-content: center; align-items: center; min-height: 100vh; position: relative;">
+    <div style="position: relative; width: 90%; max-width: 1000px; height: 420px; display: flex; justify-content: center; align-items: center;">
+      <div style="background: rgba(173, 198, 255, 0.7); border-radius: 60px; padding: 60px 40px 100px; text-align: center; z-index: 1; position: relative;">
+        <div style="position: absolute; top: 20px; right: 30px; background: black; color: white; padding: 10px 20px; border-radius: 30px; font-weight: bold; font-size: 14px; z-index: 2;">ART</div>
+        <h1 style="margin: 0; font-size: 2.5rem; font-weight: bold; color: #1c1c4d; line-height: 1.4;">Elevate your look with our<br>outstanding collection</h1>
+        <div style="margin-top: 30px; background: #1c1c4d; color: white; padding: 12px 30px; border-radius: 12px; display: inline-block; font-weight: bold; cursor: pointer;">Browse Art</div>
+      </div>
+      <div style="position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%); width: 100%; max-width: 700px; display: flex; justify-content: space-around; z-index: 3;">
+        <img src="images/blue.png" alt="art-1" style="width: 180px; height: auto; border-radius: 24px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+        <img src="images/men.png" alt="art-2" style="width: 180px; height: auto; border-radius: 24px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+      </div>
+    </div>
+  </section>
+
+   <!-- Section 8: Final Footer -->
+   <footer id="section8">
+    <div class="footer-top">
+      <div class="logo">VIRTUART</div>
+      <a href="#section1" style="text-decoration: none;">
+        <button style="background: black; color: white; padding: 12px 28px; border: none; border-radius: 24px; font-weight: bold; font-size: 14px;">ART</button>
+      </a>
+      
+    </div>
+
+    <div class="footer-columns">
+      <div>
+        <h4>Know More</h4>
+        <p>Buy</p>
+        <p>Sell</p>
+        <p>Request an Estimate</p>
+        <p>Blog</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p>Client Advisory</p>
+        <p>Restoration</p>
+        <p>Collection Services</p>
+        <p>Museum Services</p>
+        <p>Post sale services</p>
+        <p>Private services</p>
+        <p>Storage</p>
+      </div>
+      <div>
+        <h4>About</h4>
+        <p>Who we are</p>
+        <p>Press</p>
+        <p>Careers</p>
+      </div>
+      <div>
+        <h4>Discover</h4>
+        <p>Record Price Artwork</p>
+        <p>FAQ’S</p>
+      </div>
+    </div>
+
+    <div class="signup-section">
+      <p>SIGN UP AND SAVE</p>
+      <p>Sign up now and be the first to know about exclusive offers, art</p>
+      <div class="email-box">
+        <input type="email" placeholder="Enter your email">
+        <img src="images/email.png" alt="email">
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <img src="images/instagram.png" alt="Instagram">
+      <img src="images/facebook.png" alt="Facebook">
+      <img src="images/youtube.png" alt="YouTube">
+      <img src="images/pinterest.png" alt="Pinterest">
+    </div>
+
+    <div class="footer-info">
+      <p>© 2025 SNITCH</p>
+      <p>Made in India, for the World</p>
+    </div>
+  </footer>
+
+</body>
+</html>
