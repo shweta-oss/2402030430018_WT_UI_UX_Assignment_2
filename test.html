@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Virtuart</title>
   <style>
+     html {
+      scroll-behavior: smooth;
+    }
     * {
       margin: 0;
       padding: 0;
@@ -17,7 +20,9 @@
     }
 
     /* Header & Nav */
+    
     header {
+        
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -181,18 +186,18 @@
 
   <!-- Header -->
   <header>
-    <div class="logo">VIRTUART</div>
+    <div class="logo"><a href="#section1" style="text-decoration: none; color: black;">VIRTUART</a></div>
     <nav>
       <ul>
-        <li><a href="#">Auctions+</a></li>
-        <li><a href="#">BUY</a></li>
-        <li><a href="#">SELL</a></li>
-        <li><a href="#">DEPARTMENTS</a></li>
-        <li><a href="#">SERVICES+</a></li>
-        <li><a href="#">REACH US</a></li>
+        <li><a href="#section2">Auctions+</a></li>
+        <li><a href="#section7">BUY</a></li>
+        <li><a href="#section5">SELL</a></li>
+        <li><a href="#section3">DEPARTMENTS</a></li>
+        <li><a href="#section6">SERVICES+</a></li>
+        <li><a href="#section8">REACH US</a></li>
       </ul>
     </nav>
-    <button class="login-btn">Login/Register</button>
+    <a href="#section4"><button class="login-btn">Login/Register</button></a>
   </header>
 
   <!-- Search -->
@@ -202,6 +207,7 @@
 
   <!-- Hero -->
   <h1 class="hero-heading">Auctions On The Way</h1>
+  <section id="section0" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 40px;"></section>
   <div class="hero-banner">
     <img src="images/chandelier.png" alt="Chandelier" />
     <div class="banner-caption">
@@ -219,19 +225,26 @@
 
 
   <!-- Section 1: Nav -->
-  <section style="display: flex; justify-content: space-between; align-items: center; padding: 20px 40px;">
+  <section id="section1" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 40px;">
     <div style="font-size: 32px; font-weight: bold;">VIRTUART</div>
-    <button style="background: black; color: white; padding: 12px 28px; border: none; border-radius: 24px; font-weight: bold; font-size: 14px;">ART</button>
+    <a href="#section0" style="text-decoration: none;">
+        <button style="background: black; color: white; padding: 12px 28px; border: none; border-radius: 24px; font-weight: bold; font-size: 14px;">ART</button>
+      </a>
+      
   </section>
+  
 
   <!-- Section 2: More Auctions -->
-  <section style="background: #f5f5f5;">
+  <section id="section2" style="background: #f5f5f5;">
     <h2 style="font-size: 32px; text-align: center;">More Auctions Coming Soon</h2>
     <p style="max-width: 800px; margin: 20px auto; text-align: center; line-height: 1.6;">
       Over the years, we have curated a wide range of online auctions in India, covering a diverse array of categories. Our portfolio boasts an impressive collection of Modern Indian Art from famous painters, exquisite vintage jewellery, fine silverware, rare timepieces, luxurious textiles, coveted celebrity memorabilia, rare books, numismatic treasures, philatelic gems, and even vintage cars. Take a look at the offerings in our upcoming online auctions.
     </p>
     <div style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
       <div style="background: black; color: white; padding: 20px; border-radius: 12px; width: 200px; text-align: center;">
+        <a href="#section0" style="text-decoration: none;">
+            <button style="background: black; color: white; padding: 12px 28px; border: none; border-radius: 24px; font-weight: bold; font-size: 14px;">ART</button>
+          </a>
         <img src="images/modern.png" alt="Modern Masters" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
         <h4>Modern</h4>
         <p>April 10 - 12, 2025</p>
@@ -245,11 +258,14 @@
   </section>
 
   <!-- Section 3: Recent Auctions -->
-  <section>
+  <section id="section3">
     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 40px;">
       <h2 style="font-size: 2.8rem; font-weight: bold;">Most Recent Auctions</h2>
       <div style="display: flex; gap: 10px;">
-        <button style="background: black; color: white; border: none; padding: 8px 18px; border-radius: 25px;">ART</button>
+        <a href="#section0">
+            <button style="background: black; color: white; border: none; padding: 8px 18px; border-radius: 25px; cursor: pointer;">ART</button>
+          </a>
+       
         <button style="background: black; color: white; border: none; width: 35px; height: 35px; border-radius: 50%;">&#9664;</button>
         <button style="background: black; color: white; border: none; width: 35px; height: 35px; border-radius: 50%;">&#9654;</button>
       </div>
@@ -271,8 +287,11 @@
   </section>
 
   <!-- Section 4: Info -->
-  <section style="position: relative;">
-    <button style="position: absolute; top: 0; right: 0; background-color: black; color: white; padding: 10px 25px; font-size: 0.9rem; font-weight: bold; border-radius: 25px; border: none;">ART</button>
+  <section id="section4" style="position: relative;">
+    <a href="#section0" style="text-decoration: none;">
+        <button style="position: absolute; top: 0; right: 0; background-color: black; color: white; padding: 10px 25px; font-size: 0.9rem; font-weight: bold; border-radius: 25px; border: none;">ART</button>
+      </a>
+      
     <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 60px;">INFO</h1>
     <div style="display: flex; flex-direction: column; gap: 20px; max-width: 400px;">
       <button style="background-color: black; color: white; border: none; padding: 15px; font-size: 1rem; font-weight: bold; border-radius: 30px; cursor: pointer;">Login here</button>
@@ -283,8 +302,11 @@
   </section>
 
   <!-- Section 5: Hidden Gems -->
-  <section style="text-align: center; position: relative;">
-    <button style="position: absolute; top: 20px; right: 20px; background-color: black; color: white; border: none; padding: 10px 25px; font-size: 0.9rem; font-weight: bold; border-radius: 25px; cursor: pointer;">ART</button>
+  <section id="section5" style="text-align: center; position: relative;">
+    <a href="#section0" style="text-decoration: none;">
+        <button style="position: absolute; top: 20px; right: 20px; background-color: black; color: white; border: none; padding: 10px 25px; font-size: 0.9rem; font-weight: bold; border-radius: 25px; cursor: pointer;">ART</button>
+      </a>
+      
     <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 60px;">Hidden Gems</h1>
     <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
       <img src="images/horse.png" alt="Horse Image" style="width: 250px; height: 250px; border-radius: 30px; object-fit: cover;">
@@ -293,8 +315,11 @@
     </div>
   </section>
   <!-- Section 6: Curated Series -->
-  <section style="position: relative;">
-    <button style="position: absolute; top: 40px; right: 80px; background-color: black; color: white; border: none; padding: 10px 25px; font-weight: bold; border-radius: 25px;">ART</button>
+  <section id="section6" style="position: relative;">
+    <a href="#section0" style="text-decoration: none;">
+        <button style="position: absolute; top: 40px; right: 80px; background-color: black; color: white; border: none; padding: 10px 25px; font-weight: bold; border-radius: 25px;">ART</button>
+      </a>
+      
     <h1 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 20px;">Curated Series</h1>
     <button style="background-color: black; color: white; font-weight: bold; padding: 12px 32px; border-radius: 25px; border: none; font-size: 1rem; margin-bottom: 60px; cursor: default;">BLACK AND WHITE</button>
     <div style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;">
@@ -312,26 +337,38 @@
       </div>
     </div>
   </section>
-  <!-- Section 7: Art Banner -->
-  <section style="display: flex; justify-content: center; align-items: center; min-height: 100vh; position: relative;">
-    <div style="position: relative; width: 90%; max-width: 1000px; height: 420px; display: flex; justify-content: center; align-items: center;">
-      <div style="background: rgba(173, 198, 255, 0.7); border-radius: 60px; padding: 60px 40px 100px; text-align: center; z-index: 1; position: relative;">
-        <div style="position: absolute; top: 20px; right: 30px; background: black; color: white; padding: 10px 20px; border-radius: 30px; font-weight: bold; font-size: 14px; z-index: 2;">ART</div>
-        <h1 style="margin: 0; font-size: 2.5rem; font-weight: bold; color: #1c1c4d; line-height: 1.4;">Elevate your look with our<br>outstanding collection</h1>
-        <div style="margin-top: 30px; background: #1c1c4d; color: white; padding: 12px 30px; border-radius: 12px; display: inline-block; font-weight: bold; cursor: pointer;">Browse Art</div>
-      </div>
-      <div style="position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%); width: 100%; max-width: 700px; display: flex; justify-content: space-around; z-index: 3;">
-        <img src="images/blue.png" alt="art-1" style="width: 180px; height: auto; border-radius: 24px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
-        <img src="images/men.png" alt="art-2" style="width: 180px; height: auto; border-radius: 24px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+ <!-- Section 7: Art Banner -->
+<section id="section7" style="display: flex; justify-content: center; align-items: center; min-height: 100vh; position: relative;">
+  <div style="position: relative; width: 90%; max-width: 1000px; height: 420px; display: flex; justify-content: center; align-items: center;">
+    <div style="background: rgba(173, 198, 255, 0.7); border-radius: 60px; padding: 60px 40px 100px; text-align: center; z-index: 1; position: relative;">
+      
+      <!-- ART Button Wrapped in Anchor -->
+      <a href="#section0" style="position: absolute; top: 20px; right: 30px; background: black; color: white; padding: 10px 20px; border-radius: 30px; font-weight: bold; font-size: 14px; z-index: 2; text-decoration: none;">ART</a>
+      
+      <h1 style="margin: 0; font-size: 2.5rem; font-weight: bold; color: #1c1c4d; line-height: 1.4;">
+        Elevate your look with our<br>outstanding collection
+      </h1>
+      <div style="margin-top: 30px; background: #1c1c4d; color: white; padding: 12px 30px; border-radius: 12px; display: inline-block; font-weight: bold; cursor: pointer;">
+        Browse Art
       </div>
     </div>
-  </section>
+    
+    <div style="position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%); width: 100%; max-width: 700px; display: flex; justify-content: space-around; z-index: 3;">
+      <img src="images/blue.png" alt="art-1" style="width: 180px; height: auto; border-radius: 24px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+      <img src="images/men.png" alt="art-2" style="width: 180px; height: auto; border-radius: 24px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+  </div>
+</section>
+
 
    <!-- Section 8: Final Footer -->
-   <footer>
+   <footer id="section8">
     <div class="footer-top">
       <div class="logo">VIRTUART</div>
-      <button>ART</button>
+      <a href="#section0" style="text-decoration: none;">
+        <button style="background: black; color: white; padding: 12px 28px; border: none; border-radius: 24px; font-weight: bold; font-size: 14px;">ART</button>
+      </a>
+      
     </div>
 
     <div class="footer-columns">
